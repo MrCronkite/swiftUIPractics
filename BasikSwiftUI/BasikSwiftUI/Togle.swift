@@ -5,16 +5,25 @@ import SwiftUI
 struct TogleContentView: View {
     
     @State private var showHello = true
+    @State private var text = ""
+    @State private var password = ""
+    @State private var sliderValue: Double = 0.5
     
     var body: some View {
         VStack {
+            TextField("Enter text", text: $text)
+                .padding()
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            SecureField("Enter password", text: $password)
+                .padding()
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            
             Toggle(isOn: $showHello) {
-               Text("SHow Hello")
+                Text("SHow Hello")
             }
             .padding()
             
             Button(action: {
-                // Your action here
                 self.showHello.toggle()
             }, label: {
                 HStack(alignment: .center) {
@@ -27,11 +36,19 @@ struct TogleContentView: View {
             })
             .background(Color.green)
             .clipShape(RoundedRectangle(cornerRadius: 25))
-            
             if showHello {
-                Text("hello")
+                Text("hello \(text)")
                     .padding()
             }
+            
+            Spacer()
+            
+            Slider(value: $sliderValue, in: 0...1, step: 0.02)
+                .padding()
+            
+            Text("Slider Value: \(sliderValue)")
+                .padding()
+            
         }
     }
 }
