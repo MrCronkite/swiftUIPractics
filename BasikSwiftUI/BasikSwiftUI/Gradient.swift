@@ -8,6 +8,9 @@ struct GradientContentView: View {
         let gradient = RadialGradient(gradient: colors,
                                       center: .center, startRadius: 50, endRadius: 200)
         
+        Circle()
+            .fill(gradient)
+        
         Text("Hello World")
             .font(.largeTitle)
             .padding()
@@ -15,9 +18,6 @@ struct GradientContentView: View {
             .background(LinearGradient(gradient: Gradient(colors: [.red, .yellow]),
                                        startPoint: .leading,
                                        endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/))
-        
-        return Circle()
-            .fill(gradient)
             
     }
 }
