@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B25439CF2B1E265D0024A1E3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25439CE2B1E265D0024A1E3 /* Alert.swift */; };
 		B2A1697B2B1B45400095AD75 /* BasikSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A1697A2B1B45400095AD75 /* BasikSwiftUIApp.swift */; };
 		B2A1697D2B1B45400095AD75 /* VStack,HStack,ZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A1697C2B1B45400095AD75 /* VStack,HStack,ZStack.swift */; };
 		B2A1697F2B1B45420095AD75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A1697E2B1B45420095AD75 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B25439CE2B1E265D0024A1E3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		B2A169772B1B45400095AD75 /* BasikSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasikSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A1697A2B1B45400095AD75 /* BasikSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasikSwiftUIApp.swift; sourceTree = "<group>"; };
 		B2A1697C2B1B45400095AD75 /* VStack,HStack,ZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VStack,HStack,ZStack.swift"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				B2A1698E2B1B889C0095AD75 /* Togle.swift */,
 				B2A169902B1C6B450095AD75 /* TapGesture.swift */,
 				B2A169922B1C70C60095AD75 /* List.swift */,
+				B25439CE2B1E265D0024A1E3 /* Alert.swift */,
 			);
 			path = BasikSwiftUI;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25439CF2B1E265D0024A1E3 /* Alert.swift in Sources */,
 				B2A1698D2B1B785F0095AD75 /* Gradient.swift in Sources */,
 				B2A169932B1C70C60095AD75 /* List.swift in Sources */,
 				B2A1698F2B1B889C0095AD75 /* Togle.swift in Sources */,
